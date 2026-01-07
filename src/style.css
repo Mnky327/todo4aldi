@@ -70,11 +70,15 @@ body {
 /* ================= SIDEBAR ================= */
 .sidebar {
   width: 280px;
-  background: #ff6767;
+  background: #ff6b6b;
   padding: 30px 25px;
   color: #fff;
+
   display: flex;
   flex-direction: column;
+
+  height: 100%;          /* important */
+  overflow-y: auto;     /* sidebar scroll */
 }
 
 .profile {
