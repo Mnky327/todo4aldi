@@ -73,10 +73,8 @@ body {
   background: #ff6b6b;
   padding: 30px 25px;
   color: #fff;
-
   display: flex;
   flex-direction: column;
-
   margin-top: 25px;              /* 👈 Abstand nach oben */
   height: calc(100% - 25px);     /* 👈 Höhe anpassen */
   border-top-right-radius: 20px;
