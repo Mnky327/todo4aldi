@@ -6,11 +6,88 @@
     <title>ALDI DX</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
+
   <body>
     <div id="app">
-        <img src="./assets/logo_aldi.jpg"/>
-        <p>Welcome to ALDI DX Application</p>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="avatar"></div>
+          <h3>Sundar Gurung</h3>
+          <p>sundargurung36@gmail.com</p>
+        </div>
+
+        <ul class="menu">
+          <li>Dashboard</li>
+          <li>Vital Task</li>
+          <li class="active">My Task</li>
+          <li>Task Categories</li>
+          <li>Settings</li>
+        </ul>
+
+        <div class="logout">Logout</div>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+
+        <!-- Header -->
+        <header class="header">
+          <h1>To-Do</h1>
+          <div class="date">
+            <p>Tuesday</p>
+            <span>20/06/2023</span>
+          </div>
+        </header>
+
+        <!-- Content -->
+        <section class="content">
+
+          <!-- Task List -->
+          <div class="task-list">
+            <h2>My Tasks</h2>
+
+            <div class="task-card">
+              <h3>Submit Documents</h3>
+              <p>Make sure to submit all necessary documents.</p>
+              <small class="extreme">Priority: Extreme</small>
+              <small class="not-started">Status: Not Started</small>
+            </div>
+
+            <div class="task-card">
+              <h3>Complete assignments</h3>
+              <p>The assignments must be completed to pass final year.</p>
+              <small class="moderate">Priority: Moderate</small>
+              <small class="in-progress">Status: In Progress</small>
+            </div>
+          </div>
+
+          <!-- Task Details -->
+          <div class="task-details">
+            <h2>Submit Documents</h2>
+            <p><strong>Task Title:</strong> Document Submission</p>
+            <p>
+              <strong>Objective:</strong> To submit required documents for something important
+            </p>
+            <p class="description">
+              Review the list of documents required for submission and ensure all
+              necessary documents are ready. Organize them properly, scan physical
+              copies, rename files, and upload them securely.
+            </p>
+
+            <ul>
+              <li>Ensure documents are authentic</li>
+              <li>Maintain confidentiality</li>
+              <li>Follow deadlines strictly</li>
+            </ul>
+
+            <p><strong>Deadline:</strong> End of Day</p>
+          </div>
+
+        </section>
+      </main>
+
     </div>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
