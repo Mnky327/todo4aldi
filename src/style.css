@@ -77,8 +77,10 @@ body {
   display: flex;
   flex-direction: column;
 
-  height: 100%;          /* important */
-  overflow-y: auto;     /* sidebar scroll */
+  margin-top: 25px;              /* 👈 Abstand nach oben */
+  height: calc(100% - 25px);     /* 👈 Höhe anpassen */
+  border-top-right-radius: 20px;
+  overflow-y: auto;
 }
 
 .profile {
