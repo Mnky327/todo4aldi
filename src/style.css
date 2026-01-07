@@ -57,8 +57,16 @@ body {
 }
 
 .topbar-right {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
   font-size: 14px;
+}
+
+.topbar-right div {
+  font-weight: 600;
+  color: #333;
 }
 
 .topbar-right span {
