@@ -34,7 +34,7 @@ body {
 
 .title {
   font-size: 26px;
-  color: #ff6b6b;
+  color: #ff6767;
   font-weight: 600;
 }
 
@@ -70,7 +70,7 @@ body {
 /* ================= SIDEBAR ================= */
 .sidebar {
   width: 280px;
-  background: #ff6b6b;
+  background: #ff6767;
   padding: 30px 25px;
   color: #fff;
   display: flex;
@@ -108,7 +108,7 @@ body {
 
 .menu .active {
   background: #fff;
-  color: #ff6b6b;
+  color: #ff6767;
   font-weight: 600;
 }
 
