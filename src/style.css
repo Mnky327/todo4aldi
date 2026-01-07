@@ -1,18 +1,172 @@
-:root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+  background: #f4f6fb;
+  height: 100vh;
 }
 
 #app {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+  display: flex;
+  height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #ff6b6b;
+  color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile {
+  text-align: center;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.profile p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.menu {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.menu li {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.menu .active {
+  background: white;
+  color: #ff6b6b;
+}
+
+.logout {
+  font-size: 14px;
+  cursor: default;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  color: #ff6b6b;
+}
+
+.date span {
+  color: #3fa9f5;
+  font-size: 14px;
+}
+
+/* Content */
+.content {
+  padding: 30px;
+  display: flex;
+  gap: 25px;
+  flex: 1;
+}
+
+/* Task List */
+.task-list {
+  width: 35%;
+}
+
+.task-list h2 {
+  margin-bottom: 15px;
+}
+
+.task-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.task-card p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.task-card small {
+  display: block;
+  font-size: 12px;
+}
+
+.extreme {
+  color: red;
+}
+
+.moderate {
+  color: #3fa9f5;
+}
+
+.not-started {
+  color: red;
+}
+
+.in-progress {
+  color: #3fa9f5;
+}
+
+/* Task Details */
+.task-details {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.task-details h2 {
+  margin-bottom: 15px;
+}
+
+.task-details p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.description {
+  color: #555;
+}
+
+.task-details ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.task-details li {
+  font-size: 14px;
+  margin-bottom: 6px;
 }
